@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 0.5em 1em;
+    position: relative;
+    height: 70px;
+    width: 2000px;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    flex-grow: 1;
+    margin-top: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#sair {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 70px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    margin-left: 1450px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+#sair:hover {
+    background-color: rgb(116, 116, 116);;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+article {
+    width: min-content;
+    margin: auto;
+    background-color: white;
+    padding: 0.5em;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+article:hover {
+    background-color: black;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+#container-jogadores {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: auto;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white; 
+}
+
+.saibamais {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0.5em;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    color: white; 
+}
+
+.saibamais:hover {
+    background-color: rgb(116, 116, 116);
+    color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.atletas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#divCompleta {
+    display: grid;
+    grid-template-columns: auto;
+    max-width: 1200px;
+    gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    #divCompleta {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #divCompleta {
+        grid-template-columns: auto auto auto auto;
+    }
+}
